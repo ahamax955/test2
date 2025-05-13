@@ -14,7 +14,7 @@ def get_flag():
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
-        print(row[1])
+        print(row)
     cursor.close()
     conn.close()
 
