@@ -14,11 +14,9 @@ def get_flag():
     cursor.execute(sql)
     results = cursor.fetchall()
     for row in results:
-        print(row)
+        print(row[1])
     cursor.close()
     conn.close()
-
-
 
 
 if __name__ == '__main__':
